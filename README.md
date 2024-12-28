@@ -43,3 +43,11 @@ Develop and deploy a RESTful API for managing a library of books using AWS Farga
 
 ## Setup and Run Locally
 
+
+## Infrastructure Automation
+- Initialize Terraform
+terraform init
+
+- plan and apply
+terraform plan -out=plan.out
+terraform apply plan.out

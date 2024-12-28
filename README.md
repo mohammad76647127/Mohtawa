@@ -42,12 +42,17 @@ Develop and deploy a RESTful API for managing a library of books using AWS Farga
 ---
 
 ## Setup and Run Locally
-
+- TerraForm is not currently available in my region to test.
 
 ## Infrastructure Automation
 - Initialize Terraform
-terraform init
+Run the following command to initialize Terraform:
+```bash
+	terraform init
+```
 
 - plan and apply
-terraform plan -out=plan.out
-terraform apply plan.out
+```bash
+	terraform plan -out=plan.out
+	terraform apply plan.out
+```

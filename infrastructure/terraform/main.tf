@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"  # Adjust to your AWS region
+  region = "eu-north-1"  # Adjust to your AWS region
 }
 
 resource "aws_ecs_cluster" "example" {

@@ -13,20 +13,12 @@ The API is designed for deployment to AWS Fargate but can run locally for this a
 5. [Authentication](#authentication)
 6. [Infrastructure Automation](#infrastructure-automation)
 7. [CI/CD Pipeline](#ci-cd-pipeline)
-8. [Evaluation Criteria](#evaluation-criteria)
 
 ---
 
 ## Overview
 
-### Objective
 Develop and deploy a RESTful API for managing a library of books using AWS Fargate. Automate infrastructure provisioning with Terraform and implement a CI/CD pipeline using GitHub Actions.
-
-### Key Features
-- CRUD operations for managing books
-- JWT authentication for secure access
-- Automated provisioning of AWS resources with Terraform
-- CI/CD pipeline for automated testing and deployment
 
 ---
 
@@ -36,12 +28,14 @@ Develop and deploy a RESTful API for managing a library of books using AWS Farga
 - [Docker](https://www.docker.com/)
 - [MSSQL Server]()
 - [Terraform](https://www.terraform.io/downloads)
-- AWS Account (for Terraform validation)
-- GitHub Account
 
 ---
 
 ## Setup and Run Locally
+- Create Database
+- Create The Tables (Manual or by Migartion)
+- Open Visual Studio
+- Select Docker Profile and Run
 - TerraForm is not currently available in my region to test.
 
 ## Infrastructure Automation
@@ -56,3 +50,6 @@ Run the following command to initialize Terraform:
 	terraform plan -out=plan.out
 	terraform apply plan.out
 ```
+
+## CI/CD Pipeline
+Just push the code to 'master' branch

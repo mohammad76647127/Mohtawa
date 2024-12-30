@@ -18,7 +18,12 @@ The API is designed for deployment to AWS Fargate but can run locally for this a
 
 ## Overview
 
-Develop and deploy a RESTful API for managing a library of books using AWS Fargate. Automate infrastructure provisioning with Terraform and implement a CI/CD pipeline using GitHub Actions.
+Developed and deployed a RESTful API for managing a library of books using AWS Fargate.
+Automated infrastructure provisioning with Terraform and implemented a CI/CD pipeline utilizing GitHub Actions.
+The application followed a clean architecture structure, comprising API, Domain, Infrastructure, and Application layers.
+Implemented a Generic Repository Pattern to reduce code redundancy and improve maintainability, alongside a Unit of Work to handle transaction management effectively.
+Additionally, I created a generic middleware to handle exception management and integrated Serilog for robust logging, including support for correlation IDs.
+Optimized performance by integrating an object mapper and enhanced configuration management through custom extension methods.
 
 ---
 
@@ -53,3 +58,5 @@ Run the following command to initialize Terraform:
 
 ## CI/CD Pipeline
 Just push the code to 'master' branch
+ci-cd.yml file created with all the jobs
+secrets are stored in githu secrets

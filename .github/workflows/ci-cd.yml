@@ -50,7 +50,7 @@ jobs:
             docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
   deploy-infrastructure:
-    needs: build-docker-image
+    #needs: build-docker-image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -71,7 +71,7 @@ jobs:
         run: terraform apply -auto-approve
 
   deploy-to-fargate:
-    needs: [build-docker-image, deploy-infrastructure]
+  #  needs: [build-docker-image, deploy-infrastructure]
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to AWS Fargate
